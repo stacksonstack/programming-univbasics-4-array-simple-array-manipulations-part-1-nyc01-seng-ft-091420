@@ -7,11 +7,9 @@ next_color = "violet"
 updated_array = using_push(colors_in_the_rainbow, next_color)
 
 def using_unshift(array, string)
-  
+  array.unshift(string)
+end
 
-describe "using_unshift" do 
-  before(:each) do 
-    bouroughs_in_nyc = ["Brooklyn", "Queens", "Manhattan", "Bronx"]
-    @new_neighborhood = "Staten Island"
-    @updated_array = using_unshift(bouroughs_in_nyc, @new_neighborhood)
-  end
+bouroughs_in_nyc = ["Brooklyn", "Queens", "Manhattan", "Bronx"]
+new_neighborhood = "Staten Island"
+updated_array = using_unshift(bouroughs_in_nyc, new_neighborhood)
